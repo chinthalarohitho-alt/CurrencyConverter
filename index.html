@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- container -->
+
+    <div class="container">
+
+        <div class="Header">
+            <i class="fa-solid fa-dollar-sign fa-2x"></i>
+            <h2>Currency converter</h1>
+        </div>
+
+        <div class="Amount">
+            <div class="fromDrodown">
+                <div class="select-container">
+                    <img class="FromImage" src="https://flagsapi.com/IN/flat/64.png" alt="Flag">
+                    <select name = "from" class="CountryDropdown" id="1">
+                    </select>
+                </div>
+            </div>
+            <form class="amount">Enter amount
+                <input placeholder="$" class="inputplaceholder frominputplaceholder" type="number" ">
+            </form>
+            <div class="finalcurrency">
+                <i class="fa-solid fa-right-left"></i>
+            </div>
+            <div class="toDropdown">
+                <div class="select-container">
+                    <img class="toImage" src="https://flagsapi.com/US/flat/64.png" alt="Flag">
+                    <select name = "to" class="CountryDropdown" id="1">
+                    </select>
+                </div>
+                 <form class="amount">
+                <input placeholder="converted $" class="inputplaceholder hideArrow toinputplaceholder" type="number" disabled">
+            </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="currencyCode.js"></script>
+<script src="javascript.js"></script>
+</html>
