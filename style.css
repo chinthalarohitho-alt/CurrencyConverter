@@ -123,3 +123,7 @@ body {
   align-items: center;
   gap: 1vh;
 }
+
+.fa-right-left {
+  transition: transform 0.4s;
+}
