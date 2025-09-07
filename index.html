@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency converter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./Assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./Assets/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon" href="./Assets/apple-touch-icon.png" sizes="128x128" />
 </head>
 
 <body>
@@ -23,31 +30,32 @@
             <div class="fromDrodown">
                 <div class="select-container">
                     <img class="FromImage Flag" src="https://flagsapi.com/IN/flat/64.png" alt="Flag">
-                    <select name = "from" class="CountryDropdown" id="1">
+                    <select name="from" class="CountryDropdown" id="1">
                     </select>
                 </div>
             </div>
             <form class="amount">Enter amount
                 <input placeholder="$" class="inputplaceholder frominputplaceholder" type="number" ">
             </form>
-            <div class="finalcurrency">
+            <div class=" finalcurrency">
                 <i class="fa-solid fa-right-left"></i>
+        </div>
+        <div class="toDropdown">
+            <div class="select-container">
+                <img class="toImage Flag" src="https://flagsapi.com/US/flat/64.png" alt="Flag">
+                <select name="to" class="CountryDropdown" id="1">
+                </select>
             </div>
-            <div class="toDropdown">
-                <div class="select-container">
-                    <img class="toImage Flag" src="https://flagsapi.com/US/flat/64.png" alt="Flag">
-                    <select name = "to" class="CountryDropdown" id="1">
-                    </select>
-                </div>
-                 <form class="amount">
+            <form class="amount">
                 <input placeholder="converted $" class="inputplaceholder  toinputplaceholder" type="number" disabled">
             </form>
-            </div>
         </div>
+    </div>
 
     </div>
 
 </body>
 <script src="currencyCode.js"></script>
 <script src="javascript.js"></script>
+
 </html>
