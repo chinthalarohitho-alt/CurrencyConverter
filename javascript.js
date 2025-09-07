@@ -3,6 +3,7 @@ let frominputplaceholder = document.querySelector(".frominputplaceholder");
 let toinputplaceholder = document.querySelector(".toinputplaceholder");
 let convertIcon = document.querySelector(".fa-right-left");
 let Flags = document.querySelectorAll(".Flag");
+let dollar = document.querySelector(".fa-dollar-sign");
 
 async function getlatestRate(from, to) {
   const url = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${from}.min.json`;
@@ -27,7 +28,7 @@ for (let dropdown of dropdowns) {
     if (dropdown.name === "from" && key === "INR") {
       option.selected = key;
     }
-    if (dropdown.name === "to" && key === "USD") {
+    if (dropdown.name === "to" && key === "VND") {
       option.selected = key;
     }
     dropdown.append(option);
@@ -93,6 +94,8 @@ let rotation = 0;
 convertIcon.addEventListener("click", async () => {
   rotation += 180;
   convertIcon.style.transform = `rotate(${rotation}deg)`;
+  dollar.style.transition = "0.4s";
+  dollar.style.transform = `rotate(${rotation}deg)`;
 
   let tempOptionValue = fromOption.value;
   fromOption.value = toOption.value;

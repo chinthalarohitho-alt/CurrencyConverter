@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  min-height: 35vh;
+  height: 8%;
   width: 78vh;
   padding-bottom: 6vh;
   border-radius: 10vh;
@@ -127,3 +127,6 @@ body {
 .fa-right-left {
   transition: transform 0.4s;
 }
+
+
+
